@@ -1,0 +1,43 @@
+{
+  "name": "react-draft-editor",
+  "version": "0.0.1",
+  "description": "基于Draft的富文本编辑器",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yezidd/react-draft-editor.git"
+  },
+  "keywords": [
+    "Draft"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yezidd/react-draft-editor/issues"
+  },
+  "homepage": "https://github.com/yezidd/react-draft-editor#readme",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "draft-js": "^0.10.5",
+    "draftjs-utils": "^0.9.4",
+    "html-to-draftjs": "^1.4.0",
+    "immutable": "^4.0.0-rc.12",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "draftjs-to-html": "^0.8.4",
+    "draftjs-to-markdown": "^0.5.1",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-plugin-react": "^7.5.1"
+  }
+}
