@@ -76,7 +76,12 @@ module.exports = {
   ],
   devServer: {
     contentBase: "./dist",
-    hot: true
+    hot: true,
+    clientLogLevel: "none",
+    historyApiFallback: true,
+    host: "127.0.0.1",
+    port: "8001",
+    progress: "true"
   },
-  devtool: "source-map"
+  devtool: "eval-source-map"
 };

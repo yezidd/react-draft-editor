@@ -11,6 +11,7 @@ module.exports = {
     filename: "[name]_[chunkHash:7].js"
   },
   mode: "production",
+  devtool: "source-map",
   module: {
     rules: [
       {
