@@ -4,7 +4,9 @@
   "description": "基于Draft的富文本编辑器",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext .js src"
+    "lint": "eslint --ext .js src",
+    "build": "webpack --config ./build/webpack.prod.js",
+    "dev": "webpack-dev-server --inline --progress --open --config ./build/webpack.dev.js"
   },
   "repository": {
     "type": "git",
@@ -30,7 +32,15 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
     "cross-env": "^5.2.0",
+    "css-loader": "^3.0.0",
+    "cssnano": "^4.1.10",
     "draftjs-to-html": "^0.8.4",
     "draftjs-to-markdown": "^0.5.1",
     "eslint": "^6.0.1",
@@ -38,6 +48,21 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-mocha": "^4.11.0",
-    "eslint-plugin-react": "^7.5.1"
-  }
+    "eslint-plugin-react": "^7.5.1",
+    "file-loader": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^2.0.1",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "browserslist": [
+    "last 2 version",
+    ">1%",
+    "ios 7"
+  ]
 }

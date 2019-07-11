@@ -5,9 +5,12 @@
       "sourceType": "module"
   },
   "env": {
-      "browser": true
+      "browser": true,
+      "node": true
   },
   "rules": {
+      "comma-dangle": [2, "never"],
+      "import/no-extraneous-dependencies": 0,
       "indent": ["error", 2],
       "quotes": ["error", "double"],
       "semi": ["error", "always"],
