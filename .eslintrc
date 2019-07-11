@@ -1,20 +1,45 @@
 {
-  "root": true, 
-  "extends": "airbnb",
-  "parserOptions": {
-      "sourceType": "module"
-  },
-  "env": {
-      "browser": true,
-      "node": true
-  },
-  "rules": {
-      "comma-dangle": [2, "never"],
-      "import/no-extraneous-dependencies": 0,
-      "indent": ["error", 2],
-      "quotes": ["error", "double"],
-      "semi": ["error", "always"],
-      "no-console": "error",
-      "arrow-parens": 0
-  }
+    "root": true,
+    "extends": [
+        "airbnb",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "plugins": [
+        "eslint-plugin-import",
+        "eslint-plugin-react"
+    ],
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": false
+    },
+    "globals": {
+        "module": true,
+    },
+    "rules": {
+        "comma-dangle": [
+            2,
+            "never"
+        ],
+        "import/no-extraneous-dependencies": 0,
+        "indent": [
+            "error",
+            2
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": "error",
+        "arrow-parens": 0,
+        "react/prefer-stateless-function": 0,
+        "react/jsx-filename-extension": 0
+    }
 }
