@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>React</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    window.initialState = {
+      thisUser: {
+        avatar: "https://thirdwx.qlogo.cn/mmopen/r0Ta6Gcq6mJo23BH8WwJXjLhKvicQDEtJHAvKgdxSqUvAH1oXoM8k7pevsiblomNVx6SYzkQwBODvFmujicLNc3DJOdejdqvl4ia/132",
+        id: "3335576732555293416",
+        isLogin: true,
+        username: "soredtrose",
+      },
+    };
+  </script>
+  <script>
+    // 开发环境下，chdUserId 从接口获取后，再设置到 window.INITIAL_STATE
+    fetch('/japi/platform/200020999')
+      .then(response => response.json())
+      .then(json => {
+        window.initialState.thisUser.id = json.results.id;
+      });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html"
+  ],
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.formatOnSave": false,
+  "path-intellisense.mappings": {
+    "@": "${workspaceRoot}/src"
+  },
+  "workbench.editor.enablePreview": false,
+  "eslint.packageManager": "npm",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+}
